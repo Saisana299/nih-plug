@@ -11,8 +11,8 @@ description = "An adapter to use VIZIA GUIs with NIH-plug"
 nih_plug = { path = "..", default-features = false }
 nih_plug_assets = { git = "https://github.com/robbert-vdh/nih_plug_assets.git" }
 
-baseview = { git = "https://github.com/RustAudio/baseview.git", rev = "26b019d6a278ac94d6011cebbfa13c8c9017306b" }
-vizia = { git = "https://github.com/Saisana299/vizia.git", branch = "patched-2024-12-11-dev", default-features = false, features = ["baseview", "clipboard", "x11"] }
+baseview = { git = "https://github.com/RustAudio/baseview.git", rev = "9a0b42c09d712777b2edb4c5e0cb6baf21e988f0" }
+vizia = { git = "https://github.com/Saisana299/vizia.git", branch = "develop", default-features = false, features = ["baseview", "clipboard", "x11"] }
 
 crossbeam = "0.8"
 # To make the state persistable

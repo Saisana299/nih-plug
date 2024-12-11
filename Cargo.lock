@@ -688,6 +688,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "baseview"
+version = "0.1.0"
+source = "git+https://github.com/RustAudio/baseview.git?rev=9a0b42c09d712777b2edb4c5e0cb6baf21e988f0#9a0b42c09d712777b2edb4c5e0cb6baf21e988f0"
+dependencies = [
+ "cocoa",
+ "core-foundation",
+ "keyboard-types",
+ "nix 0.22.3",
+ "objc",
+ "raw-window-handle 0.5.2",
+ "uuid",
+ "winapi",
+ "x11",
+ "x11rb 0.13.1",
+]
+
+[[package]]
 name = "bindgen"
 version = "0.69.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3118,7 +3135,7 @@ dependencies = [
 name = "nih_plug_vizia"
 version = "0.0.0"
 dependencies = [
- "baseview 0.1.0 (git+https://github.com/RustAudio/baseview.git?rev=26b019d6a278ac94d6011cebbfa13c8c9017306b)",
+ "baseview 0.1.0 (git+https://github.com/RustAudio/baseview.git?rev=9a0b42c09d712777b2edb4c5e0cb6baf21e988f0)",
  "crossbeam",
  "nih_plug",
  "nih_plug_assets",
@@ -4237,7 +4254,7 @@ dependencies = [
 [[package]]
 name = "selectors"
 version = "0.23.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "bitflags 1.3.2",
  "cssparser",
@@ -4977,7 +4994,7 @@ checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
 [[package]]
 name = "vizia"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "vizia_baseview",
  "vizia_core",
@@ -4987,7 +5004,7 @@ dependencies = [
 [[package]]
 name = "vizia_baseview"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "baseview 0.1.0 (git+https://github.com/RustAudio/baseview.git?rev=26b019d6a278ac94d6011cebbfa13c8c9017306b)",
  "femtovg",
@@ -5001,7 +5018,7 @@ dependencies = [
 [[package]]
 name = "vizia_core"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "accesskit",
  "bitflags 2.6.0",
@@ -5032,7 +5049,7 @@ dependencies = [
 [[package]]
 name = "vizia_derive"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -5042,12 +5059,12 @@ dependencies = [
 [[package]]
 name = "vizia_id"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 
 [[package]]
 name = "vizia_input"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "bitflags 1.3.2",
  "keyboard-types",
@@ -5057,7 +5074,7 @@ dependencies = [
 [[package]]
 name = "vizia_storage"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "morphorm",
  "vizia_id",
@@ -5066,7 +5083,7 @@ dependencies = [
 [[package]]
 name = "vizia_style"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "bitflags 2.6.0",
  "cssparser",
@@ -5079,7 +5096,7 @@ dependencies = [
 [[package]]
 name = "vizia_window"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "accesskit",
  "morphorm",
@@ -5090,7 +5107,7 @@ dependencies = [
 [[package]]
 name = "vizia_winit"
 version = "0.1.0"
-source = "git+https://github.com/Saisana299/vizia.git?branch=patched-2024-12-11-dev#e018767e4387fd270f39f363445558bcfa29335a"
+source = "git+https://github.com/Saisana299/vizia.git?branch=develop#e018767e4387fd270f39f363445558bcfa29335a"
 dependencies = [
  "accesskit",
  "accesskit_winit",
